@@ -31,10 +31,7 @@ const userSchema = new mongoose.Schema({
         avatar: {
             type: String,
         },
-        telephone_number: {
-            type: String,
-            required: true
-        },
+
         roleId: {
             type: String
             // type: mongoose.Schema.Types.ObjectId, ref: "Role",

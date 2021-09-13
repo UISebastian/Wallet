@@ -37,7 +37,7 @@ export default {
                 last_name,
                 email,
                 password,
-                avatar,
+
 
 
             },
@@ -49,7 +49,7 @@ export default {
                 last_name,
                 email,
                 password,
-                avatar,
+
 
             });
             return {token: createToken(user, secret, "30m")};

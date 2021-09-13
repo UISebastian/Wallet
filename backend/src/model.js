@@ -1,4 +1,6 @@
 import mongoose from "mongoose";
+import User from './api/user/user.model';
+import Message from './api/message/message.model';
 
 const connectDb = () => {
     if (process.env.TEST_DATABASE_URL) {
@@ -16,7 +18,8 @@ const connectDb = () => {
 };
 
 const models ={
-    /* User,*/
+     User,
+    Message
 };
 
 export {connectDb};

@@ -12,9 +12,12 @@ import models, {connectDb} from "./model";
 import loaders from "./loaders";
 
 //express server
-const app = express()
+
+const app = express();
+
 app.use(cors());
 app.use(morgan("dev"));
+
 
 // check if user has valid xsrf-token
 const getMe = async req => {
